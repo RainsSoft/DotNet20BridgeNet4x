@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet20BridgeNet4x", "DotNet20BridgeNet4x\DotNet20BridgeNet4x.csproj", "{1C0B5F30-54B2-42F5-A887-114C61EED614}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet20BridgeNet4x.Test", "DotNet20BridgeNet4x.Test\DotNet20BridgeNet4x.Test.csproj", "{CCF49F24-1306-459F-82D3-66E8A9C64FD2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C0B5F30-54B2-42F5-A887-114C61EED614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C0B5F30-54B2-42F5-A887-114C61EED614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C0B5F30-54B2-42F5-A887-114C61EED614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C0B5F30-54B2-42F5-A887-114C61EED614}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCF49F24-1306-459F-82D3-66E8A9C64FD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCF49F24-1306-459F-82D3-66E8A9C64FD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCF49F24-1306-459F-82D3-66E8A9C64FD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCF49F24-1306-459F-82D3-66E8A9C64FD2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA163C87-7BF4-4365-BB7C-DA22CF51050E}
+	EndGlobalSection
+EndGlobal
