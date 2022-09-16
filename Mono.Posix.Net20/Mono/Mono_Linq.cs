@@ -6,6 +6,11 @@ namespace System.Linq
 {
 
 }
+
+namespace System.Xml
+{
+
+}
 namespace Mono
 {
 }
