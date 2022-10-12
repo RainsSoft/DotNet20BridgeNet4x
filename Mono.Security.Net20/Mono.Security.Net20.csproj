@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EA699C0C-BDF6-458E-BCF5-3F16E2B83FFC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mono.Security.Net20</RootNamespace>
+    <AssemblyName>Mono.Security.Net20</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET_1_1;NET_2_0</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NET_1_1;NET_2_0</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Mono.Security.Helper.cs" />
+    <Compile Include="Mono.Math.Prime.Generator\NextPrimeFinder.cs" />
+    <Compile Include="Mono.Math.Prime.Generator\PrimeGeneratorBase.cs" />
+    <Compile Include="Mono.Math.Prime.Generator\SequentialSearchPrimeGeneratorBase.cs" />
+    <Compile Include="Mono.Math.Prime\ConfidenceFactor.cs" />
+    <Compile Include="Mono.Math.Prime\PrimalityTests.cs" />
+    <Compile Include="Mono.Math\BigInteger.cs" />
+    <Compile Include="Mono.Security.Authenticode\AuthenticodeBase.cs" />
+    <Compile Include="Mono.Security.Authenticode\AuthenticodeDeformatter.cs" />
+    <Compile Include="Mono.Security.Authenticode\AuthenticodeFormatter.cs" />
+    <Compile Include="Mono.Security.Authenticode\PrivateKey.cs" />
+    <Compile Include="Mono.Security.Authenticode\SoftwarePublisherCertificate.cs" />
+    <Compile Include="Mono.Security.Cryptography\ARC4Managed.cs" />
+    <Compile Include="Mono.Security.Cryptography\CryptoConvert.cs" />
+    <Compile Include="Mono.Security.Cryptography\CryptoTools.cs" />
+    <Compile Include="Mono.Security.Cryptography\DHKeyGeneration.cs" />
+    <Compile Include="Mono.Security.Cryptography\DHParameters.cs" />
+    <Compile Include="Mono.Security.Cryptography\DiffieHellman.cs" />
+    <Compile Include="Mono.Security.Cryptography\DiffieHellmanManaged.cs" />
+    <Compile Include="Mono.Security.Cryptography\KeyPairPersistence.cs" />
+    <Compile Include="Mono.Security.Cryptography\MD2.cs" />
+    <Compile Include="Mono.Security.Cryptography\MD2Managed.cs" />
+    <Compile Include="Mono.Security.Cryptography\MD4.cs" />
+    <Compile Include="Mono.Security.Cryptography\MD4Managed.cs" />
+    <Compile Include="Mono.Security.Cryptography\MD5SHA1.cs" />
+    <Compile Include="Mono.Security.Cryptography\PKCS1.cs" />
+    <Compile Include="Mono.Security.Cryptography\PKCS8.cs" />
+    <Compile Include="Mono.Security.Cryptography\RC4.cs" />
+    <Compile Include="Mono.Security.Cryptography\RSAManaged.cs" />
+    <Compile Include="Mono.Security.Cryptography\SHA224.cs" />
+    <Compile Include="Mono.Security.Cryptography\SHA224Managed.cs" />
+    <Compile Include="Mono.Security.Cryptography\SymmetricTransform.cs" />
+    <Compile Include="Mono.Security.Cryptography\TlsHMAC.cs" />
+    <Compile Include="Mono.Security.Protocol.Ntlm\ChallengeResponse.cs" />
+    <Compile Include="Mono.Security.Protocol.Ntlm\ChallengeResponse2.cs" />
+    <Compile Include="Mono.Security.Protocol.Ntlm\MessageBase.cs" />
+    <Compile Include="Mono.Security.Protocol.Ntlm\NtlmAuthLevel.cs" />
+    <Compile Include="Mono.Security.Protocol.Ntlm\NtlmFlags.cs" />
+    <Compile Include="Mono.Security.Protocol.Ntlm\NtlmSettings.cs" />
+    <Compile Include="Mono.Security.Protocol.Ntlm\Type1Message.cs" />
+    <Compile Include="Mono.Security.Protocol.Ntlm\Type2Message.cs" />
+    <Compile Include="Mono.Security.Protocol.Ntlm\Type3Message.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake.Client\TlsClientCertificate.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake.Client\TlsClientCertificateVerify.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake.Client\TlsClientFinished.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake.Client\TlsClientHello.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake.Client\TlsClientKeyExchange.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake.Client\TlsServerCertificate.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake.Client\TlsServerCertificateRequest.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake.Client\TlsServerFinished.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake.Client\TlsServerHello.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake.Client\TlsServerHelloDone.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake.Client\TlsServerKeyExchange.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake.Server\TlsClientCertificate.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake.Server\TlsClientCertificateVerify.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake.Server\TlsClientFinished.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake.Server\TlsClientHello.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake.Server\TlsClientKeyExchange.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake.Server\TlsServerCertificate.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake.Server\TlsServerCertificateRequest.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake.Server\TlsServerFinished.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake.Server\TlsServerHello.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake.Server\TlsServerHelloDone.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake.Server\TlsServerKeyExchange.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake\ClientCertificateType.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake\HandshakeMessage.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls.Handshake\HandshakeType.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\Alert.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\CipherAlgorithmType.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\CipherSuite.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\CipherSuiteCollection.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\CipherSuiteFactory.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\ClientContext.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\ClientRecordProtocol.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\ClientSessionCache.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\ContentType.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\Context.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\DebugHelper.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\ExchangeAlgorithmType.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\HandshakeState.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\HashAlgorithmType.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\HttpsClientStream.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\RecordProtocol.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\RSASslSignatureDeformatter.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\RSASslSignatureFormatter.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\SecurityCompressionType.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\SecurityParameters.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\SecurityProtocolType.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\ServerContext.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\ServerRecordProtocol.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\SslCipherSuite.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\SslClientStream.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\SslHandshakeHash.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\SslServerStream.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\SslStreamBase.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\TlsCipherSuite.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\TlsClientSettings.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\TlsException.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\TlsServerSettings.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\TlsStream.cs" />
+    <Compile Include="Mono.Security.X509.Extensions\AuthorityKeyIdentifierExtension.cs" />
+    <Compile Include="Mono.Security.X509.Extensions\BasicConstraintsExtension.cs" />
+    <Compile Include="Mono.Security.X509.Extensions\CertificatePoliciesExtension.cs" />
+    <Compile Include="Mono.Security.X509.Extensions\CRLDistributionPointsExtension.cs" />
+    <Compile Include="Mono.Security.X509.Extensions\ExtendedKeyUsageExtension.cs" />
+    <Compile Include="Mono.Security.X509.Extensions\GeneralNames.cs" />
+    <Compile Include="Mono.Security.X509.Extensions\KeyAttributesExtension.cs" />
+    <Compile Include="Mono.Security.X509.Extensions\KeyUsageExtension.cs" />
+    <Compile Include="Mono.Security.X509.Extensions\NetscapeCertTypeExtension.cs" />
+    <Compile Include="Mono.Security.X509.Extensions\PrivateKeyUsagePeriodExtension.cs" />
+    <Compile Include="Mono.Security.X509.Extensions\SubjectAltNameExtension.cs" />
+    <Compile Include="Mono.Security.X509.Extensions\SubjectKeyIdentifierExtension.cs" />
+    <Compile Include="Mono.Security.X509\PKCS12.cs" />
+    <Compile Include="Mono.Security.X509\X501Name.cs" />
+    <Compile Include="Mono.Security.X509\X509Builder.cs" />
+    <Compile Include="Mono.Security.X509\X509Certificate.cs" />
+    <Compile Include="Mono.Security.X509\X509CertificateBuilder.cs" />
+    <Compile Include="Mono.Security.X509\X509CertificateCollection.cs" />
+    <Compile Include="Mono.Security.X509\X509Chain.cs" />
+    <Compile Include="Mono.Security.X509\X509ChainStatusFlags.cs" />
+    <Compile Include="Mono.Security.X509\X509CRL.cs" />
+    <Compile Include="Mono.Security.X509\X509Extension.cs" />
+    <Compile Include="Mono.Security.X509\X509Extensions.cs" />
+    <Compile Include="Mono.Security.X509\X509Store.cs" />
+    <Compile Include="Mono.Security.X509\X509StoreManager.cs" />
+    <Compile Include="Mono.Security.X509\X509Stores.cs" />
+    <Compile Include="Mono.Security.X509\X520Attributes.cs" />
+    <Compile Include="Mono.Security\ASN1.cs" />
+    <Compile Include="Mono.Security\ASN1Convert.cs" />
+    <Compile Include="Mono.Security\BitConverterLE.cs" />
+    <Compile Include="Mono.Security\PKCS7.cs" />
+    <Compile Include="Mono.Security\StrongName.cs" />
+    <Compile Include="Mono.Xml\MiniParser.cs" />
+    <Compile Include="Mono.Xml\SecurityParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
