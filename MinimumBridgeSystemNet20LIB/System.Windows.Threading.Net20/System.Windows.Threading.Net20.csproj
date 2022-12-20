@@ -7,7 +7,7 @@
     <ProjectGuid>{30E23137-F745-4F71-8BA9-95233D53F4C1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>System.Windows.Threading.Net20</RootNamespace>
+    <RootNamespace>System.Windows.Threading</RootNamespace>
     <AssemblyName>System.Windows.Threading.Net20</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -25,7 +25,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\Bridge_LIB\</OutputPath>
     <DefineConstants>TRACE;NET_1_1;NET_2_0;NET_3_0</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
