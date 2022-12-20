@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 
-namespace System.Windows.Threading.Net20
+namespace System.Windows.Threading
 {
     public static class SafeAction
     {
