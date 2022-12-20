@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <!--Switches-->
+  <CopyAttributes Enabled="true" />
+  <UnionDuplicates Enabled="false" />
+  <Debug Enabled="1" />
+  <Internalize Enabled="false" />
+  <MergeXml Enabled="true" />
+  <!--Signing-->
+  <Sign Enabled="true" Delay="true">H:\GitHub\DotNet20BridgeNet4x\mono.snk</Sign>
+  <!--Logging-->
+  <Log Enabled="true">H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\ILMerge.log</Log>
+  <!--Assemblies-->
+  <Assemblies>
+    <Assembly>H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\DotNet20BridgeNet4x.dll</Assembly>
+    <Assembly>H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\System.Mono.Posix.Net20.dll</Assembly>
+    <Assembly>H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\System.Core.Net20.dll</Assembly>
+    <Assembly>H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\System.Threading.Net20.dll</Assembly>
+    <Primary>H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\DotNet20BridgeNet4x.dll</Primary>
+  </Assemblies>
+  <!--Output-->
+  <OutputAssembly>H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\DotNet20BridgeNet4x.dll</OutputAssembly>
+  <!--.NET Framework-->
+  <Framework>.NET Framework v2.0.50727 Service Pack 2</Framework>
+  <!--Merge Engine-->
+  <Engine Name="ILMerge" />
+</Settings>
