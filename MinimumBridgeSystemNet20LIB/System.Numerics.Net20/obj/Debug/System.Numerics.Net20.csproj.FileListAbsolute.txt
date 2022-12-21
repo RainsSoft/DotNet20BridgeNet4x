@@ -1,0 +1,6 @@
+H:\GitHub\DotNet20BridgeNet4x\System.Numerics.Net20\obj\Debug\System.Numerics.Net20.csproj.AssemblyReference.cache
+H:\GitHub\DotNet20BridgeNet4x\System.Numerics.Net20\obj\Debug\System.Numerics.Net20.csproj.CoreCompileInputs.cache
+H:\GitHub\DotNet20BridgeNet4x\System.Numerics.Net20\bin\Debug\System.Numerics.Net20.dll
+H:\GitHub\DotNet20BridgeNet4x\System.Numerics.Net20\bin\Debug\System.Numerics.Net20.pdb
+H:\GitHub\DotNet20BridgeNet4x\System.Numerics.Net20\obj\Debug\System.Numerics.Net20.dll
+H:\GitHub\DotNet20BridgeNet4x\System.Numerics.Net20\obj\Debug\System.Numerics.Net20.pdb

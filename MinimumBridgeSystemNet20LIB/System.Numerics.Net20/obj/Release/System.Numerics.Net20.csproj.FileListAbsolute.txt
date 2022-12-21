@@ -1,0 +1,14 @@
+H:\GitHub\DotNet20BridgeNet4x\Bin_DLL\System.Numerics.Net20.dll
+H:\GitHub\DotNet20BridgeNet4x\Bin_DLL\System.Numerics.Net20.pdb
+H:\GitHub\DotNet20BridgeNet4x\System.Numerics.Net20\obj\Release\System.Numerics.Net20.csproj.AssemblyReference.cache
+H:\GitHub\DotNet20BridgeNet4x\System.Numerics.Net20\obj\Release\System.Numerics.Net20.csproj.CoreCompileInputs.cache
+H:\GitHub\DotNet20BridgeNet4x\System.Numerics.Net20\obj\Release\System.Numerics.Net20.dll
+H:\GitHub\DotNet20BridgeNet4x\System.Numerics.Net20\obj\Release\System.Numerics.Net20.pdb
+G:\GitHub\DotNet20BridgeNet4x\System.Numerics.Net20\obj\Release\System.Numerics.Net20.csproj.AssemblyReference.cache
+G:\GitHub\DotNet20BridgeNet4x\System.Numerics.Net20\obj\Release\System.Numerics.Net20.csproj.CoreCompileInputs.cache
+G:\GitHub\DotNet20BridgeNet4x\System.Numerics.Net20\obj\Release\System.Numerics.Net20.dll
+G:\GitHub\DotNet20BridgeNet4x\System.Numerics.Net20\obj\Release\System.Numerics.Net20.pdb
+G:\GitHub\DotNet20BridgeNet4x\Bin_DLL\System.Numerics.Net20.dll
+G:\GitHub\DotNet20BridgeNet4x\Bin_DLL\System.Numerics.Net20.pdb
+G:\GitHub\DotNet20BridgeNet4x\Bridge_LIB\System.Numerics.Net20.dll
+G:\GitHub\DotNet20BridgeNet4x\Bridge_LIB\System.Numerics.Net20.pdb
