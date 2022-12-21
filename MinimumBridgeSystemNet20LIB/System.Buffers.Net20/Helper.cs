@@ -4,7 +4,7 @@ using System.Text;
 
 namespace System.Buffers
 {
-    public class Class1
+    public class Hepler
     {
     }
 }
