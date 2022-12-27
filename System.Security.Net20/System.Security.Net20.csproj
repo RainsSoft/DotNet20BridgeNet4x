@@ -7,7 +7,7 @@
     <ProjectGuid>{A2F5E356-15DF-4998-9F09-AE8B4EA4160E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>System.Security.Net20</RootNamespace>
+    <RootNamespace>System.Security</RootNamespace>
     <AssemblyName>System.Security.Net20</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
