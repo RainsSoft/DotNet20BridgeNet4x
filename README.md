@@ -1,4 +1,5 @@
 # DotNet20BridgeNet4x
+##Library with classes from Mono to bring modern C# language features to .NET 2.0
 ### 1:DotNet20BridgeNet4x provides C# 5 async and await support for net2.0 projects.
     DotNet20BridgeNet4x provides  old .net2.0  projects support async CTP  (async and await keyword) 
 ### 2: Task Parallel Library(TPL)  in net2.0 projects.
