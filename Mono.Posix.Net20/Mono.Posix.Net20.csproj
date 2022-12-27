@@ -7,7 +7,7 @@
     <ProjectGuid>{A6AFE267-5E33-44C0-A1B9-3283B95792A1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Mono.Posix.Net20</RootNamespace>
+    <RootNamespace>Mono.Posix</RootNamespace>
     <AssemblyName>System.Mono.Posix.Net20</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
