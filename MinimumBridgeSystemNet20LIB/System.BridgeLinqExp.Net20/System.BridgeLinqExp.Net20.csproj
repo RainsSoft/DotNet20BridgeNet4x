@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5E7C1A0-FF59-4462-9C1A-F87FBBE98C4F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.BridgeLinqExp</RootNamespace>
+    <AssemblyName>System.BridgeLinqExp.Net20</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Bridge_LIB\</OutputPath>
+    <DefineConstants>TRACE;NET_1_1;NET_2_0;INSIDE_SYSCORE;LIBC;NET_3_5</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions.cs" />
+    <Compile Include="Funcs.cs" />
+    <Compile Include="HashPrimeNumbers.cs" />
+    <Compile Include="HashSet.cs" />
+    <Compile Include="Locale.cs" />
+    <Compile Include="Runtime\CompilerServices\ExecutionScope.cs" />
+    <Compile Include="Runtime\CompilerServices\ExtensionAttribute.cs" />
+    <Compile Include="Runtime\CompilerServices\IStrongBox.cs" />
+    <Compile Include="Runtime\CompilerServices\StrongBox_T.cs" />
+    <Compile Include="System.Linq.Dynamic\Dynamic_Linq_LIB.cs" />
+    <Compile Include="System.Linq.Expressions\BinaryExpression.cs" />
+    <Compile Include="System.Linq.Expressions\ConditionalExpression.cs" />
+    <Compile Include="System.Linq.Expressions\ConstantExpression.cs" />
+    <Compile Include="System.Linq.Expressions\ElementInit.cs" />
+    <Compile Include="System.Linq.Expressions\EmitContext.cs" />
+    <Compile Include="System.Linq.Expressions\Expression.cs" />
+    <Compile Include="System.Linq.Expressions\ExpressionPrinter.cs" />
+    <Compile Include="System.Linq.Expressions\ExpressionTransformer.cs" />
+    <Compile Include="System.Linq.Expressions\ExpressionType.cs" />
+    <Compile Include="System.Linq.Expressions\ExpressionVisitor.cs" />
+    <Compile Include="System.Linq.Expressions\Expression_T.cs" />
+    <Compile Include="System.Linq.Expressions\Extensions.cs" />
+    <Compile Include="System.Linq.Expressions\InvocationExpression.cs" />
+    <Compile Include="System.Linq.Expressions\LambdaExpression.cs" />
+    <Compile Include="System.Linq.Expressions\ListInitExpression.cs" />
+    <Compile Include="System.Linq.Expressions\MemberAssignment.cs" />
+    <Compile Include="System.Linq.Expressions\MemberBinding.cs" />
+    <Compile Include="System.Linq.Expressions\MemberBindingType.cs" />
+    <Compile Include="System.Linq.Expressions\MemberExpression.cs" />
+    <Compile Include="System.Linq.Expressions\MemberInitExpression.cs" />
+    <Compile Include="System.Linq.Expressions\MemberListBinding.cs" />
+    <Compile Include="System.Linq.Expressions\MemberMemberBinding.cs" />
+    <Compile Include="System.Linq.Expressions\MethodCallExpression.cs" />
+    <Compile Include="System.Linq.Expressions\NewArrayExpression.cs" />
+    <Compile Include="System.Linq.Expressions\NewExpression.cs" />
+    <Compile Include="System.Linq.Expressions\ParameterExpression.cs" />
+    <Compile Include="System.Linq.Expressions\TypeBinaryExpression.cs" />
+    <Compile Include="System.Linq.Expressions\UnaryExpression.cs" />
+    <Compile Include="System.Linq\Check.cs" />
+    <Compile Include="System.Linq\Enumerable.cs" />
+    <Compile Include="System.Linq\Grouping.cs" />
+    <Compile Include="System.Linq\IGrouping.cs" />
+    <Compile Include="System.Linq\ILookup_T.cs" />
+    <Compile Include="System.Linq\IOrderedEnumerable_T.cs" />
+    <Compile Include="System.Linq\IOrderedQueryable.cs" />
+    <Compile Include="System.Linq\IOrderedQueryable_T.cs" />
+    <Compile Include="System.Linq\IQueryable.cs" />
+    <Compile Include="System.Linq\IQueryable_T.cs" />
+    <Compile Include="System.Linq\IQueryProvider.cs" />
+    <Compile Include="System.Linq\Lookup.cs" />
+    <Compile Include="System.Linq\OrderedEnumerable.cs" />
+    <Compile Include="System.Linq\OrderedSequence.cs" />
+    <Compile Include="System.Linq\Queryable.cs" />
+    <Compile Include="System.Linq\QueryableEnumerable.cs" />
+    <Compile Include="System.Linq\QueryableTransformer.cs" />
+    <Compile Include="System.Linq\QuickSort.cs" />
+    <Compile Include="System.Linq\SortContext.cs" />
+    <Compile Include="System.Linq\SortDirection.cs" />
+    <Compile Include="System.Linq\SortSequenceContext.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
