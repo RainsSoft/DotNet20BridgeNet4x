@@ -25,7 +25,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\Bridge_LIB\</OutputPath>
+    <OutputPath>..\..\Bin_DLL\Bridge_LIB\</OutputPath>
     <DefineConstants>TRACE;NET_1_1;NET_2_0;INSIDE_SYSCORE;LIBC;NET_3_5</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
