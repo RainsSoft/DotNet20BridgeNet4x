@@ -16,3 +16,5 @@ G:\GitHub\DotNet20BridgeNet4x\MinimumBridgeSystemNet20LIB\System.Buffers.Net20\o
 G:\GitHub\DotNet20BridgeNet4x\MinimumBridgeSystemNet20LIB\System.Buffers.Net20\obj\Release\System.Buffers.Net20.csproj.CoreCompileInputs.cache
 G:\GitHub\DotNet20BridgeNet4x\MinimumBridgeSystemNet20LIB\System.Buffers.Net20\obj\Release\System.Buffers.Net20.dll
 G:\GitHub\DotNet20BridgeNet4x\MinimumBridgeSystemNet20LIB\System.Buffers.Net20\obj\Release\System.Buffers.Net20.pdb
+G:\GitHub\DotNet20BridgeNet4x\Bin_DLL\Bridge_LIB\System.Buffers.Net20.dll
+G:\GitHub\DotNet20BridgeNet4x\Bin_DLL\Bridge_LIB\System.Buffers.Net20.pdb
