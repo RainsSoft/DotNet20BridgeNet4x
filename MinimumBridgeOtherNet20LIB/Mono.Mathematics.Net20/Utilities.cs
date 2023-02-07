@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Reflection.Emit;
 using System.Runtime.InteropServices;
 
 namespace Mono.Core
@@ -12,11 +14,50 @@ namespace Mono.Core
         /// </summary>
         /// <typeparam name="T">a struct to evaluate</typeparam>
         /// <returns>sizeof this struct</returns>
-        public static int SizeOf<T>() where T : struct {
-            int size = Marshal.SizeOf(typeof(T));
-            return size;           
-            //return Interop.SizeOf<T>();
+        //public static int SizeOf<T>() where T : struct {
+        //    int size = Marshal.SizeOf(typeof(T));
+        //    return size;           
+        //    //return Interop.SizeOf<T>();
+        //}
+        public static int SizeOf<T>() {
+            var tk = typeof(T);
+            if (genericSizes.ContainsKey(tk)) {
+                return genericSizes[tk];
+            }
+            if (tk.IsValueType) { 
+                return Marshal.SizeOf(tk);
+            }
+            return SizeOf(typeof(T));
         }
+        public delegate T Func<T>();
+        public static int SizeOf(this Type type) {
+            var dynamicMethod = new DynamicMethod("SizeOf", typeof(int), Type.EmptyTypes);
+            var generator = dynamicMethod.GetILGenerator();
+
+            generator.Emit(OpCodes.Sizeof, type);
+            generator.Emit(OpCodes.Ret);
+
+            var function = (Func<int>)dynamicMethod.CreateDelegate(typeof(Func<int>));
+            return function();
+        }
+        /// <summary>
+        /// A lookup of type sizes. Used instead of Marshal.SizeOf() which has additional
+        /// overhead, but also is compatible with generic functions for simplified code.
+        /// </summary>
+        private static Dictionary<Type, int> genericSizes = new Dictionary<Type, int>()
+        {
+            { typeof(bool),     sizeof(bool) },
+            { typeof(float),    sizeof(float) },
+            { typeof(double),   sizeof(double) },
+            { typeof(sbyte),    sizeof(sbyte) },
+            { typeof(byte),     sizeof(byte) },
+            { typeof(short),    sizeof(short) },
+            { typeof(ushort),   sizeof(ushort) },
+            { typeof(int),      sizeof(int) },
+            { typeof(uint),     sizeof(uint) },
+            { typeof(ulong),    sizeof(ulong) },
+            { typeof(long),     sizeof(long) },
+        };
     }
 }
 namespace Mono.Core.Serialization { 
