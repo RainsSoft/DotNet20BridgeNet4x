@@ -37,6 +37,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mono\ExtensionAttribute.cs" />
+    <Compile Include="Mono\LinqHelper.cs" />
     <Compile Include="System.Xml.Linq.Helper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="System.Xml.Linq\Extensions.cs" />
@@ -70,16 +72,6 @@
     <Compile Include="System.Xml.Schema\Extensions.cs" />
     <Compile Include="Mono\XmlTypeConvertorAttribute.cs" />
     <Compile Include="System.Xml.XPath\Extensions.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Mono.Posix.Net20\Mono.Posix.Net20.csproj">
-      <Project>{a6afe267-5e33-44c0-a1b9-3283b95792a1}</Project>
-      <Name>Mono.Posix.Net20</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\System.Core.Net20\System.Core.Net20.csproj">
-      <Project>{1e9498fc-1f70-4ae6-aae3-89043d4c995c}</Project>
-      <Name>System.Core.Net20</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
