@@ -7,7 +7,7 @@
     <ProjectGuid>{1E9498FC-1F70-4AE6-AAE3-89043D4C995C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>System.Core.Net20</RootNamespace>
+    <RootNamespace>System.Core</RootNamespace>
     <AssemblyName>System.Core.Net20</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -27,12 +27,13 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\Bin_DLL\dlls\</OutputPath>
+    <OutputPath>..\Bin_DLL\Core_Dlls\</OutputPath>
     <DefineConstants>TRACE;NET_1_1;NET_2_0;INSIDE_SYSCORE;LIBC;NET_3_5</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DocumentationFile>..\Bin_DLL\dlls\System.Core.Net20.xml</DocumentationFile>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,6 +47,9 @@
     <Compile Include="System.Collections.Generic\DefaultEqualityComparer.cs" />
     <Compile Include="System.Collections.Generic\GenericEqualityComparer.cs" />
     <Compile Include="System.Collections.Generic\HashSet.cs" />
+    <Compile Include="System.Collections.ObjectModel\ObservableCollection.cs" />
+    <Compile Include="System.Collections.Specialized\INotifyCollectionChanged.cs" />
+    <Compile Include="System.Collections.Specialized\NotifyCollectionChangedEventArgs.cs" />
     <Compile Include="System.Collections\HashPrimeNumbers.cs" />
     <Compile Include="System.IO.Pipes\AnonymousPipeClientStream.cs" />
     <Compile Include="System.IO.Pipes\AnonymousPipeServerStream.cs" />
@@ -64,6 +68,7 @@
     <Compile Include="System.IO.Pipes\PipeUnix.cs" />
     <Compile Include="System.IO.Pipes\PipeWin32.cs" />
     <Compile Include="System.IO\HandleInheritability.cs" />
+    <Compile Include="System.Linq.Dynamic\Dynamic_Linq_LIB.cs" />
     <Compile Include="System.Linq.Expressions\BinaryExpression.cs" />
     <Compile Include="System.Linq.Expressions\ConditionalExpression.cs" />
     <Compile Include="System.Linq.Expressions\ConstantExpression.cs" />
