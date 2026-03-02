@@ -1,0 +1,158 @@
+Set platform to '2.0', using directory 'C:\windows\Microsoft.NET\Framework64\v2.0.50727' for mscorlib.dll
+Set platform to '2.0', using directory 'C:\windows\Microsoft.NET\Framework64\v2.0.50727' for mscorlib.dll
+Set platform to '2.0', using directory 'C:\windows\Microsoft.NET\Framework64\v2.0.50727' for mscorlib.dll
+Set platform to 'v4', using directory 'C:\windows\Microsoft.NET\Framework64\v2.0.50727' for mscorlib.dll
+Running on Microsoft (R) .NET Framework v4.0.30319
+mscorlib.dll version = 4.0.0.0
+The list of input assemblies is:
+	H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\DotNet20BridgeNet4x.dll
+	H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\System.Mono.Posix.Net20.dll
+	H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\System.Core.Net20.dll
+	H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\System.Threading.Net20.dll
+Trying to read assembly from the file 'H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\DotNet20BridgeNet4x.dll'.
+	Successfully read in assembly.
+	There were no errors reported in DotNet20BridgeNet4x's metadata.
+Trying to read assembly from the file 'H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\System.Mono.Posix.Net20.dll'.
+	Successfully read in assembly.
+	There were no errors reported in System.Mono.Posix.Net20's metadata.
+Trying to read assembly from the file 'H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\System.Core.Net20.dll'.
+	Successfully read in assembly.
+	There were no errors reported in System.Core.Net20's metadata.
+Trying to read assembly from the file 'H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\System.Threading.Net20.dll'.
+	Successfully read in assembly.
+	There were no errors reported in System.Threading.Net20's metadata.
+Checking to see that all of the input assemblies have a compatible PeKind.
+	DotNet20BridgeNet4x.PeKind = ILonly
+	System.Mono.Posix.Net20.PeKind = ILonly
+	System.Core.Net20.PeKind = ILonly
+	System.Threading.Net20.PeKind = ILonly
+All input assemblies have a compatible PeKind value.
+Merging assembly-level attributes from input assemblies for the target assembly.
+Merging assembly 'DotNet20BridgeNet4x' into target assembly.
+Merging assembly 'System.Mono.Posix.Net20' into target assembly.
+Merging assembly 'System.Core.Net20' into target assembly.
+Duplicate type name: modifying name of the type '<PrivateImplementationDetails>' (from assembly 'System.Core.Net20') to 'System.Core.Net20.<PrivateImplementationDetails>'
+Assembly level attribute 'System.Security.SecurityCriticalAttribute' from assembly 'System.Core.Net20' being deleted from target assembly
+Merging assembly 'System.Threading.Net20' into target assembly.
+Duplicate type name: modifying name of the type '<PrivateImplementationDetails>' (from assembly 'System.Threading.Net20') to 'System.Threading.Net20.<PrivateImplementationDetails>'
+Assembly level attribute 'System.Security.SecurityCriticalAttribute' from assembly 'System.Threading.Net20' being deleted from target assembly
+Copying 1 Win32 Resources from assembly 'DotNet20BridgeNet4x' into target assembly.
+ILMerge: Signing assembly with the key file 'H:\GitHub\DotNet20BridgeNet4x\mono.snk'.
+	There were no errors reported in the target assembly's metadata.
+ILMerge: Writing target assembly 'H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\DotNet20BridgeNet4x.dll'.
+Location for referenced module 'intl' is ''
+Location for referenced module 'MonoPosixHelper' is ''
+Location for referenced module 'msvcrt' is ''
+Location for referenced module 'libc' is ''
+Location for referenced module 'kernel32' is ''
+Location for referenced assembly 'mscorlib' is 'C:\windows\Microsoft.NET\Framework64\v2.0.50727\mscorlib.dll'
+	There were no errors reported in  mscorlib's metadata.
+Location for referenced assembly 'System' is 'C:\windows\Microsoft.NET\Framework64\v2.0.50727\system.dll'
+	There were errors reported in System's metadata.
+	Assembly System at platform assembly location C:\windows\Microsoft.NET\Framework64\v2.0.50727 has version 2.0.0.0 which does not match the target platform version 4.0.0.0.
+ILMerge: Done.
+Set platform to '2.0', using directory 'C:\windows\Microsoft.NET\Framework64\v2.0.50727' for mscorlib.dll
+Set platform to 'v4', using directory 'C:\windows\Microsoft.NET\Framework64\v2.0.50727' for mscorlib.dll
+Running on Microsoft (R) .NET Framework v4.0.30319
+mscorlib.dll version = 4.0.0.0
+The list of input assemblies is:
+	H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\DotNet20BridgeNet4x.dll
+	H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\System.Mono.Posix.Net20.dll
+	H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\System.Core.Net20.dll
+	H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\System.Threading.Net20.dll
+Trying to read assembly from the file 'H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\DotNet20BridgeNet4x.dll'.
+	Successfully read in assembly.
+	There were no errors reported in DotNet20BridgeNet4x's metadata.
+Trying to read assembly from the file 'H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\System.Mono.Posix.Net20.dll'.
+	Successfully read in assembly.
+	There were no errors reported in System.Mono.Posix.Net20's metadata.
+Trying to read assembly from the file 'H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\System.Core.Net20.dll'.
+	Successfully read in assembly.
+	There were no errors reported in System.Core.Net20's metadata.
+Trying to read assembly from the file 'H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\System.Threading.Net20.dll'.
+	Successfully read in assembly.
+	There were no errors reported in System.Threading.Net20's metadata.
+Checking to see that all of the input assemblies have a compatible PeKind.
+	DotNet20BridgeNet4x.PeKind = ILonly
+	System.Mono.Posix.Net20.PeKind = ILonly
+	System.Core.Net20.PeKind = ILonly
+	System.Threading.Net20.PeKind = ILonly
+All input assemblies have a compatible PeKind value.
+Merging assembly-level attributes from input assemblies for the target assembly.
+Merging assembly 'DotNet20BridgeNet4x' into target assembly.
+Merging assembly 'System.Mono.Posix.Net20' into target assembly.
+Merging assembly 'System.Core.Net20' into target assembly.
+Duplicate type name: modifying name of the type '<PrivateImplementationDetails>' (from assembly 'System.Core.Net20') to 'System.Core.Net20.<PrivateImplementationDetails>'
+Assembly level attribute 'System.Security.SecurityCriticalAttribute' from assembly 'System.Core.Net20' being deleted from target assembly
+Merging assembly 'System.Threading.Net20' into target assembly.
+Duplicate type name: modifying name of the type '<PrivateImplementationDetails>' (from assembly 'System.Threading.Net20') to 'System.Threading.Net20.<PrivateImplementationDetails>'
+Assembly level attribute 'System.Security.SecurityCriticalAttribute' from assembly 'System.Threading.Net20' being deleted from target assembly
+Copying 1 Win32 Resources from assembly 'DotNet20BridgeNet4x' into target assembly.
+ILMerge: Signing assembly with the key file 'H:\GitHub\DotNet20BridgeNet4x\mono.snk'.
+	There were no errors reported in the target assembly's metadata.
+ILMerge: Writing target assembly 'H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\DotNet20BridgeNet4x.dll'.
+ILMerge: Delay signed assembly 'H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\DotNet20BridgeNet4x.dll'.
+Location for referenced module 'intl' is ''
+Location for referenced module 'MonoPosixHelper' is ''
+Location for referenced module 'msvcrt' is ''
+Location for referenced module 'libc' is ''
+Location for referenced module 'kernel32' is ''
+Location for referenced assembly 'mscorlib' is 'C:\windows\Microsoft.NET\Framework64\v2.0.50727\mscorlib.dll'
+	There were no errors reported in  mscorlib's metadata.
+Location for referenced assembly 'System' is 'C:\windows\Microsoft.NET\Framework64\v2.0.50727\system.dll'
+	There were errors reported in System's metadata.
+	Assembly System at platform assembly location C:\windows\Microsoft.NET\Framework64\v2.0.50727 has version 2.0.0.0 which does not match the target platform version 4.0.0.0.
+ILMerge: Done.
+Set platform to '2.0', using directory 'C:\windows\Microsoft.NET\Framework64\v2.0.50727' for mscorlib.dll
+Set platform to '2.0', using directory 'C:\windows\Microsoft.NET\Framework64\v2.0.50727' for mscorlib.dll
+Set platform to 'v4', using directory 'C:\windows\Microsoft.NET\Framework64\v2.0.50727' for mscorlib.dll
+Running on Microsoft (R) .NET Framework v4.0.30319
+mscorlib.dll version = 4.0.0.0
+The list of input assemblies is:
+	H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\DotNet20BridgeNet4x.dll
+	H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\System.Mono.Posix.Net20.dll
+	H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\System.Core.Net20.dll
+	H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\System.Threading.Net20.dll
+Trying to read assembly from the file 'H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\DotNet20BridgeNet4x.dll'.
+	Successfully read in assembly.
+	There were no errors reported in DotNet20BridgeNet4x's metadata.
+Trying to read assembly from the file 'H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\System.Mono.Posix.Net20.dll'.
+	Successfully read in assembly.
+	There were no errors reported in System.Mono.Posix.Net20's metadata.
+Trying to read assembly from the file 'H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\System.Core.Net20.dll'.
+	Successfully read in assembly.
+	There were no errors reported in System.Core.Net20's metadata.
+Trying to read assembly from the file 'H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\bin\System.Threading.Net20.dll'.
+	Successfully read in assembly.
+	There were no errors reported in System.Threading.Net20's metadata.
+Checking to see that all of the input assemblies have a compatible PeKind.
+	DotNet20BridgeNet4x.PeKind = ILonly
+	System.Mono.Posix.Net20.PeKind = ILonly
+	System.Core.Net20.PeKind = ILonly
+	System.Threading.Net20.PeKind = ILonly
+All input assemblies have a compatible PeKind value.
+Merging assembly-level attributes from input assemblies for the target assembly.
+Merging assembly 'DotNet20BridgeNet4x' into target assembly.
+Merging assembly 'System.Mono.Posix.Net20' into target assembly.
+Merging assembly 'System.Core.Net20' into target assembly.
+Duplicate type name: modifying name of the type '<PrivateImplementationDetails>' (from assembly 'System.Core.Net20') to 'System.Core.Net20.<PrivateImplementationDetails>'
+Assembly level attribute 'System.Security.SecurityCriticalAttribute' from assembly 'System.Core.Net20' being deleted from target assembly
+Merging assembly 'System.Threading.Net20' into target assembly.
+Duplicate type name: modifying name of the type '<PrivateImplementationDetails>' (from assembly 'System.Threading.Net20') to 'System.Threading.Net20.<PrivateImplementationDetails>'
+Assembly level attribute 'System.Security.SecurityCriticalAttribute' from assembly 'System.Threading.Net20' being deleted from target assembly
+Copying 1 Win32 Resources from assembly 'DotNet20BridgeNet4x' into target assembly.
+ILMerge: Signing assembly with the key file 'H:\GitHub\DotNet20BridgeNet4x\mono.snk'.
+	There were no errors reported in the target assembly's metadata.
+ILMerge: Writing target assembly 'H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\DotNet20BridgeNet4x.dll'.
+ILMerge: Delay signed assembly 'H:\GitHub\DotNet20BridgeNet4x\DotNet20BridgeNet4x\DotNet20BridgeNet4x.dll'.
+Location for referenced module 'intl' is ''
+Location for referenced module 'MonoPosixHelper' is ''
+Location for referenced module 'msvcrt' is ''
+Location for referenced module 'libc' is ''
+Location for referenced module 'kernel32' is ''
+Location for referenced assembly 'mscorlib' is 'C:\windows\Microsoft.NET\Framework64\v2.0.50727\mscorlib.dll'
+	There were no errors reported in  mscorlib's metadata.
+Location for referenced assembly 'System' is 'C:\windows\Microsoft.NET\Framework64\v2.0.50727\system.dll'
+	There were errors reported in System's metadata.
+	Assembly System at platform assembly location C:\windows\Microsoft.NET\Framework64\v2.0.50727 has version 2.0.0.0 which does not match the target platform version 4.0.0.0.
+ILMerge: Done.
