@@ -27,12 +27,12 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\Bin_DLL\dlls\</OutputPath>
+    <OutputPath>..\Bin_DLL\Core_Dlls\</OutputPath>
     <DefineConstants>TRACE;NET_1_1;NET_2_0</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DocumentationFile>..\Bin_DLL\dlls\System.Mono.Posix.Net20.xml</DocumentationFile>
+    <DocumentationFile>..\Bin_DLL\Core_Dlls\System.Mono.Posix.Net20.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
