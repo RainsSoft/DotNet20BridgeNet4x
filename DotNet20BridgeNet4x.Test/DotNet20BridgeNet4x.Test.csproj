@@ -7,38 +7,78 @@
     <ProjectGuid>{CCF49F24-1306-459F-82D3-66E8A9C64FD2}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>DotNet20BridgeNet4x.Test</RootNamespace>
-    <AssemblyName>DotNet20BridgeNet4x.Test</AssemblyName>
+    <AssemblyName>DotNet20BridgeNet4x.Test.x86</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\Bin_DLL\</OutputPath>
+    <OutputPath>bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\Bin_DLL\</OutputPath>
+    <OutputPath>..\Bin_DLL\Demo\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <WarningLevel>1</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DotNet20BridgeNet4x, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin_DLL\DotNet20BridgeNet4x.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Coroutine.cs" />
+    <Compile Include="task_test13.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="task_test1.cs" />
+    <Compile Include="task_test10.cs" />
+    <Compile Include="task_test11.cs" />
+    <Compile Include="task_test12.cs" />
+    <Compile Include="task_test14.cs" />
+    <Compile Include="task_test15.cs" />
+    <Compile Include="task_test16.cs" />
+    <Compile Include="task_test17.cs" />
+    <Compile Include="task_test2.cs" />
+    <Compile Include="task_test3.cs" />
+    <Compile Include="task_test4.cs" />
+    <Compile Include="task_test5.cs" />
+    <Compile Include="task_test6.cs" />
+    <Compile Include="task_test7.cs" />
+    <Compile Include="task_test8.cs" />
+    <Compile Include="task_test9.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo copy "$(ProjectDir)\tools\ILRepack.exe"  "$(TargetDir)\ILRepack.exe"
+cd  $(TargetDir)
+cd  $(TargetDir)
+echo "%25cd%25
+echo ILRepack.exe /log /wildcards  /out:$(ProjectDir)\..\Bin_DLL\$(TargetFileName) /target:library $(TargetFileName) System.Mono.Posix.Net20.dll  System.Core.Net20.dll  System.Threading.Net20.dll
+echo copy "$(TargetPath)" "$(SolutionDir)\Bin_DLL\$(TargetFileName)"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
