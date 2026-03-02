@@ -50,12 +50,27 @@ namespace System.Linq.Expressions {
 		public ReadOnlyCollection<ParameterExpression> Parameters {
 			get { return parameters; }
 		}
+		private readonly Type _delegateType;
 
+		/// <summary>
+		/// Gets the return type of the lambda expression. 
+		/// </summary>
+		public Type ReturnType {
+			get { return _delegateType.GetMethod("Invoke").ReturnType; }
+		}
+		/// <summary>
+		/// Gets the static type of the expression that this <see cref="Expression" /> represents. (Inherited from <see cref="Expression"/>.)
+		/// </summary>
+		/// <returns>The <see cref="Type"/> that represents the static type of the expression.</returns>
+		public sealed override Type Type {
+			get { return _delegateType; }
+		}
 		internal LambdaExpression (Type delegateType, Expression body, ReadOnlyCollection<ParameterExpression> parameters)
 			: base (ExpressionType.Lambda, delegateType)
 		{
 			this.body = body;
 			this.parameters = parameters;
+			_delegateType = delegateType;
 		}
 
 #if !FULL_AOT_RUNTIME
